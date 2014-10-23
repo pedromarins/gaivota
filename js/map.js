@@ -7,9 +7,24 @@ var defaultMap = {
 function drawStation(stationLat, stationLng, targetMap) {
 	var stationPosition = new google.maps.LatLng(stationLat, stationLng);
 
-	new google.maps.Marker({
+	var station = new google.maps.Marker({
 		position: stationPosition,
 		map: targetMap
+	});
+
+	station.setTitle(("station" + 1).toString());
+	attachContent(station);
+};
+
+function attachContent(station) {
+	stationInfo = "<div class='station-toggle'>" + "<h1>" + "Estação de Niterói" + "</h1>" + "<p>" + "Texto" + "</p>" + "</div>";
+
+	var infowindow = new google.maps.InfoWindow({
+		content: stationInfo
+	});
+
+	google.maps.event.addListener(station, 'click', function() {
+		infowindow.open(station.get('map'), station);
 	});
 };
 
@@ -18,7 +33,6 @@ function drawMap(options) {
 
 	drawStation(-22.9156912, -43.449703, map);
 	drawStation(-22.929722, -43.087778, map);
-
 };
 
 function show_map(loc) {
