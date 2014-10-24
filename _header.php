@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="img/gaivota.ico" type="image/x-icon" />
 		<?= @$header_extra ?>
     </head>
 
