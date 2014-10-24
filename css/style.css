@@ -160,3 +160,61 @@ main {
 		box-shadow: -0.11em -0.83em 0 -0.4em #2d2233, -0.11em -0.83em 0 -0.42em #2d2233, -0.11em -0.83em 0 -0.44em #2d2233, -0.11em -0.83em 0 -0.46em #2d2233, -0.11em -0.83em 0 -0.477em #2d2233;
 	}
 }
+
+
+
+/* static page content */
+.banner {
+	padding: 6em 0;
+	color: #fff;
+	text-align: center;
+}
+
+.banner h2 {
+	font-size: 3.5em;
+}
+
+.banner p {
+	max-width: 70%;
+	margin: 3em 15% 0;
+	line-height: 1.5;
+}
+
+/* aplication page */
+.application {
+	background: #1e122a;
+}
+
+.application-content {
+	max-width: 60%;
+	margin: 4em 20% 0;
+}
+
+.application-content li {
+	display: inline-block;
+	border: 1px solid #1e122a;
+	margin-bottom: 4em;
+	border-radius: 5px;
+	padding: 1.5em 2em;
+}
+
+.application-content h3 {
+	font-size: 2.5em;
+	margin-bottom: 0.3em;
+	margin-top: 0.3em;
+}
+
+.application-content p {
+	line-height: 1.4;
+}
+
+.application-content img {
+	float: left;
+	margin-right: 1.5em;
+}
+
+.application-content li:nth-child(2n) img {
+	float: right;
+	margin-right: 0;
+	margin-left: 1.5em;
+}
