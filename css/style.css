@@ -243,6 +243,12 @@ header h1 {
 	padding-top: 3em;
 }
 
+.content-block {
+	background: #206769;
+	text-align: center;
+	padding: 4em 0;
+}
+
 /**************************************** about page ****************************************/
 .about {
 	background: #8dc349;
@@ -328,12 +334,6 @@ header h1 {
 }
 
 /**************************************** share page ****************************************/
-.share {
-	background: #206769;
-	text-align: center;
-	padding: 4em 0;
-}
-
 .buy-list {
 	background: #2d2233;
 	color: #fff;

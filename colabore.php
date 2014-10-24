@@ -4,7 +4,7 @@
         <h2>Colabore</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi accusantium molestias, ut dolorum dolor officiis obcaecati sequi rem eligendi necessitatibus pariatur, dignissimos numquam nostrum iure corporis cumque natus. Amet, minima.</p>
     </section>
-    <section class="share buy-list">
+    <section class="content-block buy-list">
     	<h3 class="content-title">Compre sua estação</h3>
     	<p class="content-text">Interessado em ter uma estação Gaivota?</p>
     	<ul class="buy-itens">
@@ -103,12 +103,12 @@
     		</li>
     	</ul>
     </section>
-    <section class="share your-own">
+    <section class="content-block your-own">
         <h3 class="content-title">Monte sua estação</h3>
     	<p class="content-text">Quer aprender como montar a sua estação por conta própria?</p>
     	<a href="#" class="download">Faça o download do tutorial</a>
     </section>
-    <section class="share send-data">
+    <section class="content-block send-data">
     	<h3 class="content-title">Envie seus dados</h3>
     	<p class="content-text">Já tem sua estação e quer colaborar com o mundo?</p>
     	<a href="#" class="register">Cadastre sua estação</a>
