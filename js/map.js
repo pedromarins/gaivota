@@ -57,20 +57,8 @@ function show_map(loc) {
 		},
 		error: function () {
 			alert("não foi");
-		} //fecha error
-	}); //fecha $ajax
-
-
-
-
-	// $.ajax().ready(function(data) {
- //        type: "GET",
- //        url: "http://209.41.75.203/api.php?volume=mostrecent",
- //         alert("oi");
-	// 	for(i = 0; i < data.lines.length; i++) {
-	// 		drawStation(data.lines[i].latitude, data.lines[i].longitude);
-	// 	};
- //      });
+		}
+	});
 };
 
 function show_map_error() {
