@@ -4,20 +4,22 @@ var defaultMap = {
 	mapTypeId: google.maps.MapTypeId.ROADMAP
 };
 
-function drawStation(stationLat, stationLng, targetMap) {
+var map = 0;
+
+function drawStation(stationLat, stationLng) {
 	var stationPosition = new google.maps.LatLng(stationLat, stationLng);
 
 	var station = new google.maps.Marker({
 		position: stationPosition,
-		map: targetMap
+		map: map
 	});
 
 	station.setTitle(("station" + 1).toString());
-	attachContent(station);
+	attachContent(station, stationLat, stationLng);
 };
 
-function attachContent(station) {
-	stationInfo = "<div class='station-toggle'>" + "<h1>" + "Estação de Niterói" + "</h1>" + "<p>" + "Texto" + "</p>" + "</div>";
+function attachContent(station, stationLat, stationLng) {
+	stationInfo = "<div class='station-toggle'><h1>" + "Estação de Niterói" + "</h1><dl><dt> Latitude </dt><dd>" + stationLat + "</dd><dt>" + "Longitude" + "</dt><dd>" + stationLng + "</dd></dl></div>";
 
 	var infowindow = new google.maps.InfoWindow({
 		content: stationInfo
@@ -29,10 +31,7 @@ function attachContent(station) {
 };
 
 function drawMap(options) {
-	var map = new google.maps.Map(document.getElementById("map_canvas"), options);
-
-	drawStation(-22.9156912, -43.449703, map);
-	drawStation(-22.929722, -43.087778, map);
+	map = new google.maps.Map(document.getElementById("map_canvas"), options);
 };
 
 function show_map(loc) {
@@ -43,12 +42,20 @@ function show_map(loc) {
 	};
 
 	drawMap(mapOptions);
+
+	$.getJSON('exemplo.json', function(data) {
+		for(i = 0; i < data.linhas.length; i++) {
+			drawStation(data.linhas[i].lat, data.linhas[i].lng);
+		};
+	});
 };
 
 function show_map_error() {
 	drawMap(defaultMap);
 };
 
-if (geoPosition.init()) {
-  geoPosition.getCurrentPosition(show_map, show_map_error);
+window.onload = function() {
+	if (geoPosition.init()) {
+		geoPosition.getCurrentPosition(show_map, show_map_error);
+	};
 };
