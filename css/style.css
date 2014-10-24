@@ -322,6 +322,45 @@ header h1 {
 	border-radius: 5px;
 }
 
+.api-query li {
+	width: 60%;
+	margin: 2em 20% 0;
+}
+
+.api-query div {
+	background: #bfbfc1;
+	color: #2d2233;
+	border-radius: 5px;
+}
+
+.query-description {
+	padding: 1em;
+	border-bottom: 1px solid #2d2233;
+}
+
+.query-param {
+	display: inline-block;
+	width: 50%;
+	padding: 1em;
+	vertical-align: top;
+}
+
+.query-volume {
+	display: inline-block;
+	width: 49%;
+	padding: 1em;
+	border-left: 1px solid #2d2233;
+}
+
+.query-url {
+	margin: 0.5em 0 1.5em;
+}
+
+.query-url a {
+	color: #bfbfc1;
+}
+
+
 
 /**************************************** application page ****************************************/
 .application {
@@ -363,6 +402,10 @@ header h1 {
 }
 
 /**************************************** share page ****************************************/
+.share {
+	background: #206769;
+}
+
 .buy-list {
 	background: #2d2233;
 	color: #fff;
