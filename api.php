@@ -28,9 +28,6 @@ else {
 }
 
 
-//cria query de acordo com parametros
-  //REFATORAR!
-
 //cria base da query
 $sql = 'SELECT * FROM rawdata WHERE ';
 
@@ -65,6 +62,15 @@ while($r = mysqli_fetch_assoc($sth)) {
 }
 $resultado =  json_encode($rows);
 
-echo '{"lines":'. $resultado . "}";
+$dados = '{"lines":'. $resultado . '}';
+
+
+if (isset($_GET['callback'])) {
+ echo $_GET['callback'] . '(' . $dados .')';
+}
+else {
+ echo $dados;
+}
+
 
 ?>
