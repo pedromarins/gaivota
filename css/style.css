@@ -293,6 +293,35 @@ header h1 {
 	background: #206769;
 }
 
+.api-content {
+	background: #2d2233;
+	color: #fff;
+	font-size: 1.3em;
+	text-align: left;
+}
+
+.api-content .content-title {
+	text-align: center;
+	margin: 1em 0;
+}
+
+.api-text {
+	width: 60%;
+	margin: 1em 20% 0;
+}
+
+.api-code {
+	margin: 1.1em 0 0.6em 21%;
+	display: inline-block;
+	padding: 0.3em 0.8em;
+	background: #bfbfc1;
+	box-shadow: 0 3px 0 0 #1e122a;
+	text-align: left;
+	font-size: 1.2em;
+	color: #2d2233;
+	border-radius: 5px;
+}
+
 
 /**************************************** application page ****************************************/
 .application {
