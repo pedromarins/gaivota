@@ -158,7 +158,7 @@ header h1 {
 	margin-right: 10px
 }
 
-/* spinner */
+/**************************************** spinner ****************************************/
 .loading:after {
 	content: '';
 	display: inline-block;
@@ -221,7 +221,7 @@ header h1 {
 
 
 
-/* static page content */
+/**************************************** static pages ****************************************/
 .banner {
 	padding: 6em 0;
 	color: #fff;
@@ -243,49 +243,9 @@ header h1 {
 	padding-top: 3em;
 }
 
-/* aplication page */
-.application {
-	background: #1a7315;
-}
-
-.application-content {
-	max-width: 60%;
-	margin: 0 20% 0;
-}
-
-.application-content li {
-	display: inline-block;
-	margin-bottom: 4em;
-	border-radius: 5px;
-	padding: 1.5em 2em;
-	box-shadow: 0 0 2px 1px #736771;
-}
-
-.application-content h3 {
-	font-size: 2.5em;
-	margin-bottom: 0.3em;
-	margin-top: 0.3em;
-}
-
-.application-content p {
-	line-height: 1.4;
-}
-
-.application-content img {
-	float: left;
-	margin-right: 1.5em;
-}
-
-.application-content li:nth-child(2n) img {
-	float: right;
-	margin-right: 0;
-	margin-left: 1.5em;
-}
-
-
-/* about page */
+/**************************************** about page ****************************************/
 .about {
-	background: #51952e;
+	background: #8dc349;
 }
 
 .content-about {
@@ -322,14 +282,164 @@ header h1 {
 	font-size: 1.5em;
 }
 
-/* share page */
-.share {
+
+/**************************************** application page ****************************************/
+.application {
 	background: #8dc349;
 }
 
-.share + section li {
-	border-color: #8dc349;
+.application-content {
+	max-width: 60%;
+	margin: 0 20% 0;
 }
 
+.application-content li {
+	display: inline-block;
+	margin-bottom: 4em;
+	border-radius: 5px;
+	padding: 1.5em 2em;
+	box-shadow: 0 0 2px 1px #736771;
+}
 
+.application-content h3 {
+	font-size: 2.5em;
+	margin-bottom: 0.3em;
+	margin-top: 0.3em;
+}
 
+.application-content p {
+	line-height: 1.4;
+}
+
+.application-content img {
+	float: left;
+	margin-right: 1.5em;
+}
+
+.application-content li:nth-child(2n) img {
+	float: right;
+	margin-right: 0;
+	margin-left: 1.5em;
+}
+
+/**************************************** share page ****************************************/
+.share {
+	background: #206769;
+	text-align: center;
+	padding: 4em 0;
+}
+
+.buy-list {
+	background: #2d2233;
+	color: #fff;
+	text-align: center;
+	padding: 4em;
+}
+
+.content-title {
+	color: #7ace44;
+	text-transform: uppercase;
+	font-size: 1.6em;
+}
+
+.content-text {
+	font-size: 2.5em;
+	margin: 0.3em 0 1.5em;
+	color: #fff;
+}
+
+.buy-itens {
+	width: 80%;
+	margin: 0 10%;
+}
+
+.buy-item {
+	width: 32%;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+}
+
+.buy-item-title {
+	color: #736771;
+	font-size: 2em;
+	margin: 0 0 0.5em;
+}
+
+.buy-item img {
+	margin: 0 15px -3px 0;
+}
+
+.buy-item li p {
+	color: #bfbfbf;
+	display: inline-block;
+	margin: 10px 0 0;
+	font-size: 1.4em;
+}
+
+.buy-item li:before {
+	content: '';
+	display: inline-block;
+	background: #bfbfbf;
+	border-radius: 50%;
+	width: 6px;
+	height: 6px;
+	margin: 0 3px 2px 0;
+}
+
+.your-own {
+	background: #206769;
+}
+
+.download {
+	background: #1e5c5b;
+	display: inline-block;
+	width: 38%;
+	padding: 1em 0 1em 2em;
+	text-align: left;
+	font-size: 2em;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	box-shadow: 0px 6px 0px 0px #184c48;
+	position: relative;
+}
+
+.download:before {
+	content: '';
+	display: inline-block;
+	width: 30px;
+	height: 40px;
+	background: #184c48;
+	position: absolute;
+	right: 50px;
+	top: 15px;
+}
+
+.download:after {
+	content: '';
+	display: inline-block;
+	border-top: 36px solid #184c48;
+	border-right: 36px solid transparent;
+	border-left: 36px solid transparent;
+	position: absolute;
+	right: 29px;
+	bottom: 15px;
+}
+
+.send-data {
+	background: #2d2233;
+}
+
+.register {
+	background: #8dc349;
+	display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	text-align: center;
+	font-size: 3em;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	box-shadow: 0px 6px 0px 0px #1e122a;
+}
+/**************************************** share page ****************************************/
