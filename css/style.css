@@ -200,7 +200,7 @@ main {
 	margin-bottom: 4em;
 	border-radius: 5px;
 	padding: 1.5em 2em;
-	box-shadow: 0 0 3px 1px #736771;
+	box-shadow: 0 0 2px 1px #736771;
 }
 
 .application-content h3 {
@@ -239,6 +239,29 @@ main {
 	line-height: 1.4;
 	margin-bottom: 2em;
 	font-size: 1.4em;
+}
+
+.station-type {
+	margin: 1em;
+}
+
+.station-type li {
+	display: inline-block;
+	text-align: center;
+	box-shadow: 0 0 3px 1px #736771;
+	width:30%;
+	margin: 0 1%;
+	padding: 1em;
+	border-radius: 4px;
+}
+
+.station-type img {
+	width: 100%;
+}
+
+.station-type h4 {
+	margin: 1em 0 0;
+	font-size: 1.5em;
 }
 
 /* share page */
