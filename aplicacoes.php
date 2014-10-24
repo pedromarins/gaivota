@@ -8,9 +8,19 @@
     	<ul class="application-content">
     		<li>
     			<img src="http://placehold.it/200x200" alt="">
-    			<h3>Agrucultura industrial e caseira</h3>
+    			<h3>Agrucultura industrial e familiar</h3>
     			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus molestiae consequatur alias illo, inventore provident atque in dolor tempora. Sed voluptatibus quam illo quod iusto laudantium amet recusandae earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem nihil, illo neque voluptatibus, explicabo quod a facere praesentium omnis enim, provident perferendis eos sequi impedit laboriosam, reiciendis. Inventore.</p>
     		</li>
+            <li>
+                <img src="http://placehold.it/200x200" alt="">
+                <h3>Monitoramento de impacto ambiental</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus molestiae consequatur alias illo, inventore provident atque in dolor tempora. Sed voluptatibus quam illo quod iusto laudantium amet recusandae earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem nihil, illo neque voluptatibus, explicabo quod a facere praesentium omnis enim, provident perferendis eos sequi impedit laboriosam, reiciendis. Inventore.</p>
+            </li>
+            <li>
+                <img src="http://placehold.it/200x200" alt="">
+                <h3>Detecção de queimadas</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium temporibus molestiae consequatur alias illo, inventore provident atque in dolor tempora. Sed voluptatibus quam illo quod iusto laudantium amet recusandae earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem nihil, illo neque voluptatibus, explicabo quod a facere praesentium omnis enim, provident perferendis eos sequi impedit laboriosam, reiciendis. Inventore.</p>
+            </li>
     		<li>
     			<img src="http://placehold.it/200x200" alt="">
     			<h3>Defesa Civíl</h3>
