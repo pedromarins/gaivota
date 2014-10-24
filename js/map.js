@@ -37,16 +37,27 @@ function drawMap(options) {
 function show_map(loc) {
 	var mapOptions = {
 		center: new google.maps.LatLng(loc.coords.latitude, loc.coords.longitude),
-		zoom: 11,
+		zoom: 10,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
 
 	drawMap(mapOptions);
 
-	$.getJSON('exemplo.json', function(data) {
-		for(i = 0; i < data.lines.length; i++) {
-			drawStation(data.lines[i].latitude, data.lines[i].longitude);
-		};
+
+	$.ajax({
+		type: "GET",
+		url: "http://209.41.75.203/api.php?volume=mostrecent&callback=responder",
+		contentType: "application/json; charset=utf-8",
+		async: false,
+		dataType: "jsonp",
+		success: function (data) {
+			for(i = 0; i < data.lines.length; i++) {
+				drawStation(data.lines[i].latitude, data.lines[i].longitude);
+			};
+		},
+		error: function () {
+			alert("não foi");
+		}
 	});
 };
 
