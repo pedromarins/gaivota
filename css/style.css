@@ -77,7 +77,7 @@ header h1 {
 	border-bottom: 1px solid #fff;
 }
 
-main {
+.main-content {
 	height: 100%;
 	padding-top: 60px;
 	position: relative;
@@ -98,6 +98,64 @@ main {
 	height:100%;
 	background: white;
 	text-align: center;
+}
+
+.helper {
+	display: inline-block;
+	position: absolute;
+	bottom: 20px;
+	right: 2%;
+	color: #fff;
+}
+
+.helper-title {
+	background: #2d2233;
+	padding: 0.5em 0.8em;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.helper-content {
+	display: none;
+	position: absolute;
+	top: -140px;
+	right: 2%;
+	background: #2d2233;
+	border-radius: 5px;
+}
+
+.helper-title:hover + .helper-content {
+	display: block;
+}
+
+.helper-content li {
+	padding: 0.5em 0.6em 0;
+	font-size: 1.4em;
+	display: inline-block;
+	width: 95px;
+}
+
+.helper-content li:last-child {
+	padding-bottom: 0.5em;
+}
+
+.helper-content:after {
+	content: '';
+	border-top: 20px solid #2d2233;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	position: absolute;
+	bottom: -17px;
+	right: 16px;
+}
+
+.helper-content p {
+	display: inline-block;
+}
+
+.helper-content img {
+	vertical-align: middle;
+	margin-right: 10px
 }
 
 /* spinner */

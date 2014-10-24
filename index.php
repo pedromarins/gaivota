@@ -4,23 +4,21 @@
     include("_header.php")
 ?>
 
-    <main>
-        <div id="map_canvas">
-            <p class="loading">Carregando mapa</p>
-        </div>
+    <div id="map_canvas">
+        <p class="loading">Carregando mapa</p>
+    </div>
 
-    </main>
     <div class="helper">
         <p class="helper-title">legenda</p>
         <ul class="helper-content">
             <li>
-                <p>boia</p>
+                <p><img src="img/marker.png" alt="">boia</p>
             </li>
             <li>
-                <p>fixa</p>
+                <p><img src="img/marker.png" alt="">fixa</p>
             </li>
             <li>
-                <p>móvel</p>
+                <p><img src="img/marker.png" alt="">móvel</p>
             </li>
         </ul>
     </div>
