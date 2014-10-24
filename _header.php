@@ -17,6 +17,7 @@
 		    <nav class="menu">
 		        <ul>
 		            <li><a href="sobre.php">sobre</a></li>
+		            <li><a href="api.php">api</a></li>
 		            <li><a href="aplicacoes.php">aplicações</a></li>
 		            <li><a href="colabore.php">colabore</a></li>
 		        </ul>
