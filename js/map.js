@@ -44,8 +44,8 @@ function show_map(loc) {
 	drawMap(mapOptions);
 
 	$.getJSON('exemplo.json', function(data) {
-		for(i = 0; i < data.linhas.length; i++) {
-			drawStation(data.linhas[i].lat, data.linhas[i].lng);
+		for(i = 0; i < data.lines.length; i++) {
+			drawStation(data.lines[i].latitude, data.lines[i].longitude);
 		};
 	});
 };
