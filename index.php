@@ -9,24 +9,21 @@
             <p class="loading">Carregando mapa</p>
         </div>
 
-        <div class="helper">
-            <p>legenda</p>
-            <ul>
-                <li>
-                    <p>boia</p>
-                </li>
-                <li>
-                    <p>fixa</p>
-                </li>
-                <li>
-                    <p>móvel</p>
-                </li>
-                <li>
-                    <p>externa</p>
-                </li>
-            </ul>
-        </div>
     </main>
+    <div class="helper">
+        <p class="helper-title">legenda</p>
+        <ul class="helper-content">
+            <li>
+                <p>boia</p>
+            </li>
+            <li>
+                <p>fixa</p>
+            </li>
+            <li>
+                <p>móvel</p>
+            </li>
+        </ul>
+    </div>
 
 <?php
     $footer_extra = '

@@ -13,7 +13,7 @@
 
     <body>
 		<header>
-		    <h1><a href="#" class="logo">Gaivota</a></h1>
+		    <h1><a href="/" class="logo">Gaivota</a></h1>
 		    <nav class="menu">
 		        <ul>
 		            <li><a href="sobre.php">sobre</a></li>
@@ -22,3 +22,5 @@
 		        </ul>
 		    </nav>
 		</header>
+
+		<main class="main-content">
