@@ -19,12 +19,12 @@ else {
  $volume = 'all';
 }
 
-//verifica se station_id foi passado
-if (isset($_GET['station_id'])) {
- $station_id = $_GET['station_id'];
+//verifica se stationId foi passado
+if (isset($_GET['stationId'])) {
+ $stationId = $_GET['stationId'];
 }
 else {
- $station_id = 'all';
+ $stationId = 'all';
 }
 
 
@@ -39,14 +39,14 @@ else{
  $sql .= "1 ";
 } 
 
-//adiciona station_id na query
-if ($station_id != 'all'){
- $sql .= "AND station_id = $station_id ";
+//adiciona stationId na query
+if ($stationId != 'all'){
+ $sql .= "AND stationId = $stationId ";
 }
 
 //adiciona na query parametros para o caso de volume == mostrecent
 if ($volume == 'mostrecent'){
- $sql = "select * from ($sql order by time desc) a group by station_id;";
+ $sql = "select * from ($sql order by time desc) a group by stationId;";
 }
 
 

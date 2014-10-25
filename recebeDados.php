@@ -6,88 +6,88 @@ include 'db.php';
 //pega dados enviados pela estação. adiciona '' nos campos não passados
 $hash = $_GET['id'];
 
-if ($_GET['air_temperature'] != '') {
- $air_temperature = $_GET['air_temperature'];
+if ($_GET['ambientTemperature'] != '') {
+ $ambientTemperature = $_GET['ambientTemperature'];
 }
 else {
-  $air_temperature = "''";
+  $ambientTemperature = "''";
 }
 
-if ($_GET['soil_temperature'] != '') {
- $soil_temperature = $_GET['soil_temperature'];
+if ($_GET['soilTemperature'] != '') {
+ $soilTemperature = $_GET['soilTemperature'];
 }
 else {
-  $soil_temperature = "''";
+  $soilTemperature = "''";
 }
 
-if ($_GET['water_temperature'] != '') {
- $water_temperature = $_GET['water_temperature'];
+if ($_GET['waterTemperature'] != '') {
+ $waterTemperature = $_GET['waterTemperature'];
 }
 else {
-  $water_temperature = "''";
+  $waterTemperature = "''";
 }
 
-if ($_GET['air_humidity'] != '') {
- $air_humidity = $_GET['air_humidity'];
+if ($_GET['airHumidity'] != '') {
+ $airHumidity = $_GET['airHumidity'];
 }
 else {
-  $air_humidity = "''";
+  $airHumidity = "''";
 }
 
-if ($_GET['air_pressure'] != '') {
- $air_pressure = $_GET['air_pressure'];
+if ($_GET['pressure'] != '') {
+ $pressure = $_GET['pressure'];
 }
 else {
-  $air_pressure = "''";
+  $pressure = "''";
 }
 
-if ($_GET['air_co2'] != '') {
- $air_co2 = $_GET['air_co2'];
+if ($_GET['co'] != '') {
+ $co = $_GET['co'];
 }
 else {
-  $air_co2 = "''";
+  $co = "''";
 }
 
-if ($_GET['air_particule'] != '') {
- $air_particule = $_GET['air_particule'];
+if ($_GET['airParticle'] != '') {
+ $airParticle = $_GET['airParticle'];
 }
 else {
-  $air_particule = "''";
+  $airParticle = "''";
 }
 
-if ($_GET['wind_speed'] != '') {
- $wind_speed = $_GET['wind_speed'];
+if ($_GET['windSpeed'] != '') {
+ $windSpeed = $_GET['windSpeed'];
 }
 else {
-  $wind_speed = "''";
+  $windSpeed = "''";
 }
 
-if ($_GET['wind_direction'] != '') {
- $wind_direction = $_GET['wind_direction'];
+if ($_GET['windDirection'] != '') {
+ $windDirection = $_GET['windDirection'];
 }
 else {
-  $wind_direction = "''";
+  $windDirection = "''";
 }
 
-if ($_GET['soil_humidity'] != '') {
- $soil_humidity = $_GET['soil_humidity'];
+if ($_GET['soilHumidity'] != '') {
+ $soilHumidity = $_GET['soilHumidity'];
 }
 else {
-  $soil_humidity = "''";
+  $soilHumidity = "''";
 }
 
-if ($_GET['water_turbidity'] != '') {
- $water_turbidity = $_GET['water_turbidity'];
+if ($_GET['waterTurbidity'] != '') {
+ $waterTurbidity = $_GET['waterTurbidity'];
 }
 else {
-  $water_turbidity = "''";
+  $waterTurbidity = "''";
 }
 
-if ($_GET['water_salinity'] != '') {
- $water_salinity = $_GET['water_salinity'];
+if ($_GET['waterSalinity'] != '') {
+ $waterSalinity = $_GET['waterSalinity'];
 }
 else {
-  $water_salinity = "''";
+  $waterSalinity = "''";
 }
 
 //busca hash no banco de dados
@@ -101,8 +101,8 @@ if (isset($row)) { //verifica se a hash existe e incui dados na base
   $latitude = $row['latitude'];
   $longitude = $row['longitude'];
   $type = $row['type'];
-  $station_id = $row['station_id'];
-  $sql2 = "INSERT INTO rawdata(station_id,type,latitude,longitude,time,air_temperature,soil_temperature,water_temperature,air_humidity,air_pressure,air_co2,air_particule,wind_speed,wind_direction,soil_humidity,water_turbidity,water_salinity) VALUES ($station_id,'$type',$latitude,$longitude,$time,$air_temperature,$soil_temperature,$water_temperature,$air_humidity,$air_pressure,$air_co2,$air_particule,$wind_speed,$wind_direction,$soil_humidity,$water_turbidity,$water_salinity);";
+  $stationId = $row['stationId'];
+  $sql2 = "INSERT INTO rawdata(stationId,type,latitude,longitude,time,ambientTemperature,soilTemperature,waterTemperature,airHumidity,pressure,co,airParticle,windSpeed,windDirection,soilHumidity,waterTurbidity,waterSalinity) VALUES ($stationId,'$type',$latitude,$longitude,$time,$ambientTemperature,$soilTemperature,$waterTemperature,$airHumidity,$pressure,$co,$airParticle,$windSpeed,$windDirection,$soilHumidity,$waterTurbidity,$waterSalinity);";
   mysqli_query($conn, $sql2);
   echo "Dados inseridos com sucesso.";
   }
@@ -110,6 +110,11 @@ if (isset($row)) { //verifica se a hash existe e incui dados na base
    echo "ID de estação não encontrado. Os dados não foram salvos.";
    echo "<br>";
   }
+
+http_response_code(200);
+
+
+
 
 
 ?>
