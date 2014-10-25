@@ -49,13 +49,13 @@
 	</section>
 	<section class="content-block new-station">
 		<dl>
-			<dt>Nome:</dt> <dd><?= $owner ?>a</dd>
-			<dt>Email:</dt> <dd><?= $email ?>a</dd>
-			<dt>Tipo de estação:</dt> <dd><?= $type ?>a</dd>
-			<dt>Latitude:</dt> <dd><?= $lat ?>a</dd>
-			<dt>Longitude:</dt> <dd><?= $long ?>a</dd>
-			<dt>Data de criação:</dt> <dd><?= $date ?>a</dd>
-			<dt>Hash de autenticação:</dt> <dd><?= $hash ?>a</dd>
+			<dt>Nome:</dt> <dd><?= $owner ?></dd>
+			<dt>Email:</dt> <dd><?= $email ?></dd>
+			<dt>Tipo de estação:</dt> <dd><?= $type ?></dd>
+			<dt>Latitude:</dt> <dd><?= $lat ?></dd>
+			<dt>Longitude:</dt> <dd><?= $long ?></dd>
+			<dt>Data de criação:</dt> <dd><?= $date ?></dd>
+			<dt>Hash de autenticação:</dt> <dd><?= $hash ?></dd>
 		</dl>
 	</section>
 	<section class="content-block your-own">
