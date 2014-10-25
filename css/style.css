@@ -624,7 +624,28 @@ header h1 {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+.new-station dl {
+	color: #fff;
+	font-size: 1.4em;
+	width: 40%;
+	min-width: 400px;
+	margin: 0 auto;
+}
 
+.new-station dt {
+	display: inline-block;
+	width: 40%;
+	margin: 0 0 15px;
+	text-align: right
+}
+
+.new-station dd {
+	display: inline-block;
+	width: 59%;
+	text-align: left;
+	margin: 0 0 15px;
+	padding-left: 0.5em;
+}
 
 /**************************************** break points ****************************************/
 @media (max-width: 1000px) {
