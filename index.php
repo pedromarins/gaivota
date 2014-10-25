@@ -12,13 +12,13 @@
         <p class="helper-title">legenda</p>
         <ul class="helper-content">
             <li>
-                <p><img src="img/marker-floater.png" alt="">monitoramento flutuante</p>
+                <p><img src="img/marker-floater.png" alt="">estação flutuante</p>
             </li>
             <li>
-                <p><img src="img/marker-portable.png" alt="">monitoramento fixo</p>
+                <p><img src="img/marker-portable.png" alt="">estação fixo</p>
             </li>
             <li>
-                <p><img src="img/marker-settled.png" alt="">monitoramento portátil</p>
+                <p><img src="img/marker-settled.png" alt="">estação portátil</p>
             </li>
         </ul>
     </div>
