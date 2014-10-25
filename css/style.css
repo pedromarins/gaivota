@@ -255,8 +255,8 @@ header h1 {
 }
 
 .content-about {
-	max-width: 60%;
-	margin: 4em 20% 10em;
+	max-width: 70%;
+	margin: 4em 15% 10em;
 }
 
 .content-about p {
@@ -280,7 +280,7 @@ header h1 {
 }
 
 .station-type img {
-	width: 100%;
+	max-width: 100%;
 }
 
 .station-type h4 {
@@ -426,8 +426,7 @@ header h1 {
 }
 
 .buy-itens {
-	width: 80%;
-	margin: 0 10%;
+	width: 100%;
 }
 
 .buy-item {
@@ -471,7 +470,8 @@ header h1 {
 .download {
 	background: #1e5c5b;
 	display: inline-block;
-	width: 38%;
+	width: 50%;
+	max-width: 500px;
 	padding: 1em 0 1em 2em;
 	text-align: left;
 	font-size: 2em;
@@ -482,7 +482,7 @@ header h1 {
 	position: relative;
 }
 
-.download:before {
+.download span:before {
 	content: '';
 	display: inline-block;
 	width: 30px;
@@ -493,7 +493,7 @@ header h1 {
 	top: 15px;
 }
 
-.download:after {
+.download span:after {
 	content: '';
 	display: inline-block;
 	border-top: 36px solid #184c48;
@@ -519,4 +519,60 @@ header h1 {
 	border-radius: 5px;
 	box-shadow: 0px 6px 0px 0px #1e122a;
 }
-/**************************************** share page ****************************************/
+
+/**************************************** break points ****************************************/
+@media (max-width: 1000px) {
+	.menu a {
+		margin-left: 20px;
+	}
+	.buy-itens {
+		font-size: 0.8em;
+	}
+	.download {
+		width: 50%;
+		padding-left: 0.5em;
+		text-align: center;
+	}
+	.download span:before, .download span:after {
+		display: none
+	}
+	.content-about {
+		max-width: 90%;
+		margin: 2em 5% 6em;
+	}
+}
+
+@media (max-width: 800px) {
+	.menu a {
+		margin-left: 8px;
+	}
+	.buy-item {
+		width: 90%;
+		margin: 0 5% 4em;
+	}
+	.download {
+		width: 80%;
+		text-align: center;
+		padding-left: 0;
+	}
+	.register {
+		font-size: 2.5em;
+	}
+}
+
+@media (max-width: 650px) {
+	.station-type li {
+		width: 60%;
+		margin: 0 20% 2em;
+	}
+}
+
+@media (max-width: 500px) {
+	.menu a {
+		margin-left: 8px;
+	}
+	.station-type li {
+		width: 80%;
+		margin: 0 10% 2em;
+	}
+}

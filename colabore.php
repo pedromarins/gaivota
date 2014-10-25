@@ -9,7 +9,7 @@
     	<p class="content-text">Interessado em ter uma estação Gaivota?</p>
     	<ul class="buy-itens">
     		<li class="buy-item">
-    			<p class="buy-item-title"><img src="img/marker.png" alt=""> boia de monitoramento</p>
+    			<p class="buy-item-title"><img src="img/marker.png" alt=""> monitoramento flutuante</p>
     			<ul>
     				<li>
     					<p>Sensor de temperatura</p>
@@ -70,7 +70,7 @@
     			</ul>
     		</li>
     		<li class="buy-item">
-    			<p class="buy-item-title"><img src="img/marker.png" alt=""> monitoramento móvel</p>
+    			<p class="buy-item-title"><img src="img/marker.png" alt=""> monitoramento portátil</p>
     			<ul>
     				<li>
     					<p>Sensor de temperatura</p>
@@ -106,7 +106,7 @@
     <section class="content-block your-own">
         <h3 class="content-title">Monte sua estação</h3>
     	<p class="content-text">Quer aprender como montar a sua estação por conta própria?</p>
-    	<a href="#" class="download">Faça o download do tutorial</a>
+    	<a href="#" class="download"><span>Faça o download do tutorial</span></a>
     </section>
     <section class="content-block send-data">
     	<h3 class="content-title">Envie seus dados</h3>
