@@ -552,6 +552,53 @@ header h1 {
 	box-shadow: 0px 6px 0px 0px #1e122a;
 }
 
+/**************************************** create station ****************************************/
+.new-station {
+	background: #2d2233;
+}
+
+.new-station form {
+	width: 40%;
+	max-width: 450px;
+	margin: 0 auto 6em;
+	text-align: left;
+}
+
+.new-station label {
+	color: #fff;
+	text-align: left;
+	margin: 0 0 0.7em;
+	font-size: 1.5em;
+	display: inline-block;
+}
+
+.new-station input, select {
+	width: 100%;
+	margin: 0 0 1.3em;
+	padding: 0.6em 0.5em;
+	border-radius: 4px;
+	box-shadow: 0 0 3px 3px #ccc inset;
+	outline: none;
+	font-size: 1.2em;
+}
+
+.new-station input[type=submit] {
+	float: right;
+	width: auto;
+	background: #8dc349;
+	display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	text-align: center;
+	font-size: 1.5em;
+	color: #fff;
+	box-shadow: 0px 6px 0px 0px #1e122a;
+	cursor: pointer;
+	border: none;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+
 /**************************************** break points ****************************************/
 @media (max-width: 1000px) {
 	.menu a {

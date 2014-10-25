@@ -111,7 +111,7 @@
     <section class="content-block send-data">
     	<h3 class="content-title">Envie seus dados</h3>
     	<p class="content-text">Já tem sua estação e quer colaborar com o mundo?</p>
-    	<a href="#" class="register">Cadastre sua estação</a>
+    	<a href="nova-estacao.php" class="register">Cadastre sua estação</a>
     </section>
 
 <?php include("_footer.php") ?>
