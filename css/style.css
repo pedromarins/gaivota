@@ -159,6 +159,38 @@ header h1 {
 }
 
 /**************************************** spinner ****************************************/
+.station-toggle {
+	width: 250px;
+	text-align: left;
+}
+
+.station-toggle p {
+	display: inline-block;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+.station-toggle img {
+	vertical-align: middle;
+	margin-right: 15px;
+}
+
+.station-toggle dl {
+	margin: 1em;
+}
+
+.station-toggle dt {
+	float: left;
+	font-weight: bold;
+	margin: 0 6px 10px 0;
+}
+
+.station-toggle dd {
+	margin-bottom: 10px;
+}
+
+
+/**************************************** spinner ****************************************/
 .loading:after {
 	content: '';
 	display: inline-block;

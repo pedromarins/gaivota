@@ -20,8 +20,7 @@ function drawStation(stationLat, stationLng, stationType, params) {
 };
 
 function attachContent(station, params) {
-	// station-toggle
-	stationInfo = "";
+	stationInfo = '<div class="station-toggle"><p><img src="img/marker-' + params.type + '.png"> estação n° ' + params.stationId + '</p><dl><dt>latitude:</dt> <dd>' + params.latitude + '°</dd><dt>longitude:</dt> <dd>' + params.longitude + '°</dd><dt>última atualização:</dt> <dd>' + params.time + '</dd><dt>Temperatura ambiente:</dt> <dd>' + params.ambientTemperature + ' °C</dd><dt>Temperatura do solo:</dt> <dd>' + params.soilTemperature + ' °C</dd><dt>Umidade:</dt> <dd>' + params.airHumidity + '%</dd><dt>Umidade do solo:</dt> <dd>' + params.soilHumidity + '</dd><dt>Pressão:</dt> <dd>' + params.pressure + ' hPa</dd></dl></div>';
 
 	var infowindow = new google.maps.InfoWindow({
 		content: stationInfo
