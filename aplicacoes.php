@@ -2,7 +2,7 @@
 
     <section class="banner application">
     	<h2>Aplicações</h2>
-    	<p>Os dados fornecidos pela Gaviota podem ser utilizados pelos mais diversos campos. Com informações ambientais geolocalizadas sendo fornecidas ao vivo ....  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi accusantium molestias, ut dolorum dolor officiis obcaecati sequi rem eligendi necessitatibus pariatur, dignissimos numquam nostrum iure corporis cumque natus. Amet</p>
+    	<p>Os dados fornecidos pela Gaviota podem ser utilizados pelos mais diversos campos de aplicação com informações ambientais geolocalizadas sendo fornecidas ao vivo.</p>
     </section>
     <section class="content">
     	<ul class="application-content">
