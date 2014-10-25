@@ -19,9 +19,25 @@ function drawStation(stationLat, stationLng, stationType, params) {
 	attachContent(station, params);
 };
 
+function humidity(value) {
+	console.log(value);
+	switch(true) {
+		case value < 311:
+			return "solo seco"
+			break;
+		case value > 310 && value < 651:
+			return "solo úmido"
+			break;
+		case value > 650:
+			return "solo encharcado"
+			break;
+		default:
+			return "sem dados"
+	};
+};
+
 function attachContent(station, params) {
-	// station-toggle
-	stationInfo = "";
+	stationInfo = '<div class="station-toggle"><p><img src="img/marker-' + params.type + '.png"> estação n° ' + params.stationId + '</p><dl><dt>latitude:</dt> <dd>' + params.latitude + '°</dd><dt>longitude:</dt> <dd>' + params.longitude + '°</dd><dt>última atualização:</dt> <dd>' + params.time + '</dd><dt>Temperatura ambiente:</dt> <dd>' + params.ambientTemperature + ' °C</dd><dt>Temperatura do solo:</dt> <dd>' + params.soilTemperature + ' °C</dd><dt>Umidade:</dt> <dd>' + params.airHumidity + '%</dd><dt>Umidade do solo:</dt> <dd>' + humidity(params.soilHumidity) + '</dd><dt>Pressão:</dt> <dd>' + params.pressure + ' hPa</dd></dl></div>';
 
 	var infowindow = new google.maps.InfoWindow({
 		content: stationInfo
