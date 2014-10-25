@@ -6,12 +6,17 @@ var defaultMap = {
 
 var map = 0;
 
-function drawStation(stationLat, stationLng) {
+function drawStation(stationLat, stationLng, stationType) {
 	var stationPosition = new google.maps.LatLng(stationLat, stationLng);
+
+	var floater = "../img/marker-floater.png";
+	var portable = "../img/marker-portable.png";
+	var settled = "../img/marker-settled.png";
 
 	var station = new google.maps.Marker({
 		position: stationPosition,
-		map: map
+		map: map,
+		icon: stationType,
 	});
 
 	station.setTitle(("station" + 1).toString());
@@ -37,7 +42,7 @@ function drawMap(options) {
 function show_map(loc) {
 	var mapOptions = {
 		center: new google.maps.LatLng(loc.coords.latitude, loc.coords.longitude),
-		zoom: 10,
+		zoom: 2,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
 
@@ -52,7 +57,7 @@ function show_map(loc) {
 		dataType: "jsonp",
 		success: function (data) {
 			for(i = 0; i < data.lines.length; i++) {
-				drawStation(data.lines[i].latitude, data.lines[i].longitude);
+				drawStation(data.lines[i].latitude, data.lines[i].longitude, data.lines[i].type);
 			};
 		},
 		error: function () {
