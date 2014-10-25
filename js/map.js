@@ -51,7 +51,7 @@ function show_map(loc) {
 
 	$.ajax({
 		type: "GET",
-		url: "http://209.41.75.203/api.php?volume=mostrecent&callback=responder",
+		url: "https://209.41.75.203/api.php?volume=mostrecent&callback=responder",
 		contentType: "application/json; charset=utf-8",
 		async: false,
 		dataType: "jsonp",
