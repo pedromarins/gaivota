@@ -21,15 +21,15 @@
         	<ul class="station-type">
         		<li>
         			<img src="http://placehold.it/180x180" alt="">
-        			<h4>Ar</h4>
+        			<h4>Fixa</h4>
         		</li>
         		<li>
         			<img src="http://placehold.it/180x180" alt="">
-        			<h4>Água</h4>
+        			<h4>Móvel</h4>
         		</li>
         		<li>
         			<img src="http://placehold.it/180x180" alt="">
-        			<h4>Solo</h4>
+        			<h4>Flutuante</h4>
         		</li>
         	</ul>
         </div>
