@@ -36,7 +36,7 @@ function humidity(value) {
 };
 
 function attachContent(station, params) {
-	stationInfo = '<div class="station-toggle"><p><img src="img/marker-' + params.type + '.png"> Estação n° ' + params.stationId + '</p><dl><dt>latitude:</dt> <dd>' + params.latitude + '°</dd><dt>longitude:</dt> <dd>' + params.longitude + '°</dd><dt>última atualização:</dt> <dd>' + params.timeHuman + '</dd><dt>Temperatura ambiente:</dt> <dd>' + params.ambientTemperature + ' °C</dd><dt>Temperatura do solo:</dt> <dd>' + params.soilTemperature + ' °C</dd><dt>Umidade:</dt> <dd>' + params.airHumidity + '%</dd><dt>Umidade do solo:</dt> <dd>' + humidity(params.soilHumidity) + '</dd><dt>Pressão:</dt> <dd>' + params.pressure + ' hPa</dd></dl></div>';
+	stationInfo = '<div class="station-toggle"><p><img src="img/marker-' + params.type + '.png"> Estação n° ' + params.stationId + '</p><dl><dt>Latitude:</dt> <dd>' + params.latitude + '°</dd><dt>Longitude:</dt> <dd>' + params.longitude + '°</dd><dt>Última atualização:</dt> <dd>' + params.timeHuman + '</dd><dt>Temperatura ambiente:</dt> <dd>' + params.ambientTemperature + ' °C</dd><dt>Temperatura do solo:</dt> <dd>' + params.soilTemperature + ' °C</dd><dt>Umidade:</dt> <dd>' + params.airHumidity + '%</dd><dt>Umidade do solo:</dt> <dd>' + humidity(params.soilHumidity) + '</dd><dt>Pressão:</dt> <dd>' + params.pressure + ' hPa</dd></dl></div>';
 
 	var infowindow = new google.maps.InfoWindow({
 		content: stationInfo
@@ -63,7 +63,7 @@ function show_map(loc) {
 
 	$.ajax({
 		type: "GET",
-		url: "http://gaivota.org/api.php?volume=mostrecent&callback=responder",
+		url: "http://gaivota.org/api.php?volume=mostrecent&timeFormat=human&callback=responder",
 		contentType: "application/json; charset=utf-8",
 		async: false,
 		dataType: "jsonp",
