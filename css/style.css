@@ -77,6 +77,33 @@ header h1 {
 	border-bottom: 1px solid #fff;
 }
 
+.mobile-menu {
+	display: none;
+	position: absolute;
+	top: 15px;
+	right: 2%;
+	background: #7e5f8f;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	font-size: 1.1em;
+	cursor: pointer;
+	outline: none;
+	padding: 0.2em 0.5em;
+}
+
+.mobile-menu span:after {
+  content: "";
+  display: inline-block;
+  margin: -0.7em 0em 0.5em 0.5em;
+  width: 1em;
+  height: 0.15em;
+  background: #fff;
+  box-shadow:
+    0 0.3em 0 0 #fff,
+    0 0.6em 0 0 #fff;
+}
+
 .main-content {
 	height: 100%;
 	padding-top: 60px;
@@ -160,7 +187,7 @@ header h1 {
 
 /**************************************** spinner ****************************************/
 .station-toggle {
-	width: 250px;
+	width: 290px;
 	text-align: left;
 }
 
@@ -597,7 +624,28 @@ header h1 {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+.new-station dl {
+	color: #fff;
+	font-size: 1.4em;
+	width: 40%;
+	min-width: 400px;
+	margin: 0 auto;
+}
 
+.new-station dt {
+	display: inline-block;
+	width: 40%;
+	margin: 0 0 15px;
+	text-align: right
+}
+
+.new-station dd {
+	display: inline-block;
+	width: 59%;
+	text-align: left;
+	margin: 0 0 15px;
+	padding-left: 0.5em;
+}
 
 /**************************************** break points ****************************************/
 @media (max-width: 1000px) {
@@ -640,9 +688,42 @@ header h1 {
 }
 
 @media (max-width: 650px) {
+	.banner {
+		padding: 4em 0;
+	}
+	.banner h2 {
+		font-size: 3.5em;
+	}
 	.station-type li {
 		width: 60%;
 		margin: 0 20% 2em;
+	}
+	.menu {
+		display: none;
+		position: static;
+		background: #483652;
+	}
+	.menu li {
+		width: 20%;
+		text-align: center;
+	}
+	.menu a {
+		margin: 0;
+	}
+	.menu li:last-child {
+		width: 37%;
+	}
+	.opened {
+		height: auto;
+	}
+	.opened .menu {
+		display: block;
+	}
+	.mobile-menu {
+		display: block
+	}
+	.new-station form {
+		width: 80%;
 	}
 }
 
