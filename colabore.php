@@ -10,9 +10,7 @@
     		<li class="buy-item">
     			<p class="buy-item-title"><img src="img/marker.png" alt=""> monitoramento flutuante</p>
     			<ul>
-    				<li>
-    					<p>Sensor de temperatura</p>
-    				</li>
+    
 					<li>
 						<p>Sensor de humidade relativa do ar</p>
 					</li>
@@ -36,9 +34,7 @@
     		<li class="buy-item">
     			<p class="buy-item-title"><img src="img/marker.png" alt=""> monitoramento fixo</p>
     			<ul>
-    				<li>
-    					<p>Sensor de temperatura</p>
-    				</li>
+   
 					<li>
 						<p>Sensor de humidade relativa do ar</p>
 					</li>
@@ -71,10 +67,7 @@
     		<li class="buy-item">
     			<p class="buy-item-title"><img src="img/marker.png" alt=""> monitoramento portátil</p>
     			<ul>
-    				<li>
-    					<p>Sensor de temperatura</p>
-    				</li>
-					<li>
+
 						<p>Sensor de humidade relativa do ar</p>
 					</li>
 					<li>
