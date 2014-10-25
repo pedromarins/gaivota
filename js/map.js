@@ -6,25 +6,22 @@ var defaultMap = {
 
 var map = 0;
 
-function drawStation(stationLat, stationLng, stationType) {
-	var stationPosition = new google.maps.LatLng(stationLat, stationLng);
-
-	var floater = "../img/marker-floater.png";
-	var portable = "../img/marker-portable.png";
-	var settled = "../img/marker-settled.png";
+function drawStation(stationLat, stationLng, stationType, params) {
+	var stationPosition = new google.maps.LatLng(params.latitude, params.longitude);
 
 	var station = new google.maps.Marker({
 		position: stationPosition,
 		map: map,
-		icon: stationType,
+		icon: "../img/marker-" + params.type + ".png",
 	});
 
-	station.setTitle(("station" + 1).toString());
-	attachContent(station, stationLat, stationLng);
+	station.setTitle(params.statioId);
+	attachContent(station, params);
 };
 
-function attachContent(station, stationLat, stationLng) {
-	stationInfo = "<div class='station-toggle'><h1>" + "Estação de Niterói" + "</h1><dl><dt> Latitude </dt><dd>" + stationLat + "</dd><dt>" + "Longitude" + "</dt><dd>" + stationLng + "</dd></dl></div>";
+function attachContent(station, params) {
+	// station-toggle
+	stationInfo = "";
 
 	var infowindow = new google.maps.InfoWindow({
 		content: stationInfo
@@ -42,7 +39,7 @@ function drawMap(options) {
 function show_map(loc) {
 	var mapOptions = {
 		center: new google.maps.LatLng(loc.coords.latitude, loc.coords.longitude),
-		zoom: 2,
+		zoom: 7,
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	};
 
@@ -57,7 +54,7 @@ function show_map(loc) {
 		dataType: "jsonp",
 		success: function (data) {
 			for(i = 0; i < data.lines.length; i++) {
-				drawStation(data.lines[i].latitude, data.lines[i].longitude, data.lines[i].type);
+				drawStation(data.lines[i].latitude, data.lines[i].longitude, data.lines[i].type, data.lines[i]);
 			};
 		},
 		error: function () {
