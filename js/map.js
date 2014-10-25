@@ -61,7 +61,7 @@ function show_map(loc) {
 			};
 		},
 		error: function () {
-			alert("não foi");
+			alert("Problema na leitura de dados.");
 		}
 	});
 };
