@@ -25,7 +25,6 @@
 
 <?php
     $footer_extra = '
-    <script src="js/jquery-2.1.1.min.js"></script>
     <script src="js/geoPosition.js"></script>
     <script src="js/map.js"></script>';
     include("_footer.php")
