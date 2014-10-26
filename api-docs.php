@@ -42,7 +42,7 @@
                         <p class="query-param">type</p>
                         <p class="query-volume">settled<br>portable<br>floater</p>
                     </div>
-                    <p class="query-url"><span>Exemplo:</span> <a href="http://gaivota.org/api.php?type=settled">http://gaivota.org/api.php?type=air</a> - retorna os dados de todas as estações fixas.</p>
+                    <p class="query-url"><span>Exemplo:</span> <a href="http://gaivota.org/api.php?type=settled">http://gaivota.org/api.php?type=settled</a> - retorna os dados de todas as estações fixas.</p>
                 </li>          
                 <li>
                     <div>
@@ -58,7 +58,7 @@
                         <p class="query-param">callback</p>
                         <p class="query-volume">true</p>
                     </div>
-                    <p class="query-url"><span>Exemplo:</span> <a href="http://gaivota.org/api.php?callback=true">http://gaivota.org/api.php?callback=true</a> - retorna os dados adicionando um campo com data e hora em um formato mais legível por humanos.</p>
+                    <p class="query-url"><span>Exemplo:</span> <a href="http://gaivota.org/api.php?callback=true">http://gaivota.org/api.php?callback=true</a> - retorna os dados dentro de uma função javaScript possibilitando leitura ao vivo por páginas hospedadas em servidores de terceiros.</p>
                 </li>
             </ul>
 
