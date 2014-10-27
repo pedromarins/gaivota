@@ -5,7 +5,7 @@
     </section>
     <section class="content">
     	<div class="content-about">
-            <p>Gaivota é uma rede colaborativa de dados de dados climáticos. Desenvolvido em três camadas, o projeto possuí estações metereológicas feitas com Arduino, uma API que recebe e envia dados e visualização das informações armazenadas.</p>
+            <p>Gaivota é uma rede colaborativa de dados climáticos. Desenvolvido em três camadas, o projeto possuí estações metereológicas feitas com Arduino, uma API que recebe e envia dados e visualização das informações armazenadas.</p>
 	    <p>Gaivota segue as filosofia do software livre, hardware livre, licenças livres e dados abertos. Assim, todo desenvolvimento realizado pode ser reutilizado por outros projetos.</p>
 	    <p>Gaivota foi iniciado no <b>Hackathon SESI Cultural Digital</b> onde foi premiado em 1º lugar como melhor projeto.</p>
 
@@ -17,7 +17,7 @@
         			<h4>Henrique Andrade<br>backend</h4>
         		</li>
         		<li>
-        			<img src="img/pedro.jpg" alt="Pedrinho">
+        			<img src="img/pedro.jpg" alt="Pedrin">
         			<h4>Pedro Marins<br>frontend</h4>
         		</li>
         		<li>
