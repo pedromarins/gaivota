@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "171dcvr0702";
+$username = "";
+$password = "";
 $dbname = "gaivota";
 
 // Create connection
