@@ -1,3 +1,0 @@
-2010-07-23
- * Added SHT7x to list of supported sensors.
- * Fixed temperature offset in humidity calculation.

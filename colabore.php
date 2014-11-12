@@ -8,9 +8,8 @@
     	<p class="content-text">Quer ter uma estação Gaivota?</p>
     	<ul class="buy-itens">
     		<li class="buy-item">
-    			<p class="buy-item-title"><img src="img/marker.png" alt=""> monitoramento flutuante</p>
+    			<p class="buy-item-title"><img src="img/marker-floater.png" alt=""> monitoramento flutuante</p>
     			<ul>
-    
 					<li>
 						<p>Sensor de umidade relativa do ar</p>
 					</li>
@@ -32,9 +31,8 @@
     			</ul>
     		</li>
     		<li class="buy-item">
-    			<p class="buy-item-title"><img src="img/marker.png" alt=""> monitoramento fixo</p>
+    			<p class="buy-item-title"><img src="img/marker-settled.png" alt=""> monitoramento fixo</p>
     			<ul>
-   
 					<li>
 						<p>Sensor de umidade relativa do ar</p>
 					</li>
@@ -65,7 +63,7 @@
     			</ul>
     		</li>
     		<li class="buy-item">
-    			<p class="buy-item-title"><img src="img/marker.png" alt=""> monitoramento portátil</p>
+    			<p class="buy-item-title"><img src="img/marker-portable.png" alt=""> monitoramento portátil</p>
     			<ul>
 					<li>
 						<p>Sensor de umidade relativa do ar</p>
