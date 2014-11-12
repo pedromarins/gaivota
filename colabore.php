@@ -5,7 +5,7 @@
     </section>
     <section class="content-block buy-list">
     	<h3 class="content-title">Compre sua estação</h3>
-    	<p class="content-text">Quer ter uma estação Gaivota?</p>
+    	<p class="content-text">Quer ter uma estação Gaivota? <br><font size=3>Em breve estarão a venda três modelos de estações meteorológicas de baixo custo.</font></p>
     	<ul class="buy-itens">
     		<li class="buy-item">
     			<p class="buy-item-title"><img src="img/marker-floater.png" alt=""> monitoramento flutuante</p>
@@ -96,12 +96,18 @@
     <section class="content-block your-own">
         <h3 class="content-title">Monte sua estação</h3>
     	<p class="content-text">Quer aprender como montar a sua estação por conta própria?</p>
-    	<a href="#" class="download"><span>Faça download do tutorial</span></a>
+    	<a href="#" class="download"><span>Em breve download do tutorial aqui</span></a>
     </section>
     <section class="content-block send-data">
     	<h3 class="content-title">Envie seus dados</h3>
-    	<p class="content-text">Já tem sua estação e quer colaborar com o mundo?</p>
+    	<p class="content-text">Já tem uma estação meteorológica e deseja compartilhar seus dados?</p>
     	<a href="nova-estacao.php" class="register">Cadastre sua estação</a>
     </section>
+
+   <section class="content-block your-own">
+     <h3 class="content-title">Contato</h3>
+     <p class="content-text">Gostaria de nos enviar uma mensagem?</p>
+     <a href="fale-conosco.php" class="register">Fale conosco</a>
+   </section>
 
 <?php include("_footer.php") ?>
