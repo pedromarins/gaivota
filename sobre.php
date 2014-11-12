@@ -31,6 +31,10 @@
 		<p>Baixe nosso <a href="android/Gaivota.apk">aplicativo para Android</a> através desse link ou então escaneie o código abaixo:</p>
 				<img src='img/qrcode.jpg'> 
 
+       <h3 class="content-title">Na mídia</h3>
+                <p>Confira uma entrevista com a equipe Gaivota no canal SistemaFIRJAN:</p>
+                <iframe width="560" height="315" src="//www.youtube.com/embed/ZeDyVYUSPvk" frameborder="0" allowfullscreen></iframe>
+
         </div>
     </section>
 
