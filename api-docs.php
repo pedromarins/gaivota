@@ -6,18 +6,18 @@
     <section class="content-block api-content">
     	<div>
         	<h3 class="content-title">Para que serve?</h3>
-            <p class="api-text">API é uma interface que recebe requisições e retorna dados. Ela serve para automatizar envio e recebimento de dados. A API da Gaivota é utilizada tanto para receber dados das Estações como para fornecer dados estruturados à usuários. Com acesso aos dados, qualquer um pode realizar pesquisas e criar aplicações conforme sua própria demanda de forma independente.</p>
+            <p class="api-text">API é uma interface que automatiza o recebimento de requisições e a obtenção de dados. A API da Gaivota é usada tanto para receber dados das estações como para fornecer dados estruturados aos usuários. Com acesso aos dados, qualquer um pode realizar pesquisas e criar aplicações conforme sua própria demanda e de forma independente.</p>
 
             <h3 class="content-title">Como acessar?</h3>
             <p class="api-text">O acesso ao envio de dados pela API é restrito às Estações cadastradas. Os pacotes de envio de dados devem conter um campo 'id' com o hash fornecido na criação da Estação.<br>Já a leitura de dados é aberta e pública para qualquer usuário, que pode acessar o endereço da API enviando parâmetros para receber respostas específicas.</p>
 
             <p class="api-code">http://gaivota.org/api.php</p>
 
-            <p class="api-text">Para realizar buscas específicas na API devem ser passados parâmetros e valores seguindo o seguinte padrão:</p>
+            <p class="api-text">Para realizar buscas específicas na API, devem ser enviados parâmetros e valores seguindo o seguinte padrão:</p>
 
             <p class="api-code">http://gaivota.org/api.php?[PARAMETRO]=[VALOR]&[PARAMETRO2]=[VALOR]</p>
 
-            <p class="api-text">Abaixo são listados os parâmetros e seus valores que podem ser utilizadas na API Gaivota.</p>
+            <p class="api-text">Abaixo são listados os parâmetros e seus valores que podem ser utilizados na API Gaivota.</p>
 
             <ul class="api-query">
                 <li>
